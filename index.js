@@ -1,11 +1,11 @@
-function receivesAFunction(cb) {
-    return cb();
+const receivesAFunction = (cb) => {
+    cb();
 }
 
-function returnsANamedFunction() {
-    return function cb() {};
+const returnsANamedFunction = () => {
+    return function namedFunction() {}
 }
 
-function returnsAnAnonymousFunction() {
-    return function () {};
+const returnsAnAnonymousFunction = () => {
+    return function() {}
 }
